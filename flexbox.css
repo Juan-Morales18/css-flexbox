@@ -1,0 +1,89 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+.btn-up {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.section {
+    margin-top: 5rem;
+}
+
+.container {
+    background-color: rgb(32, 117, 197);
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    border: solid thin rgb(139, 23, 62);
+}
+
+.item {
+    background-color: rgb(172, 78, 130);
+    height: 20%;
+    color: #fff;
+    border: solid medium rgb(66, 16, 47);
+}
+
+.flexbox-basics {
+    display: inline-flex;
+    /*inline-flex: el contenedor solo ocupa el espacio necesario*/
+    display: flex;
+}
+
+/* Flex direction + flex-wrap */
+.flexbox-flow {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: row;
+    /*flex-wrap: nowrap | wrap | wrap-reverse */
+    flex-wrap: nowrap;
+    /*nowrap: Los items se mantienen en una sola fila o columna*/
+    /*wrap El contenedor envuelve los items: Si los elementos no caben en una sola fila se empiezan a formar en otra fila*/
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    /*flex-flow: Es un shortcut de flex-direction y flex-wrap*/
+}
+
+/* justify-content */
+.main-axis-alignment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: flex-start | center |flex-end | space-betweeen | space-around |space-evenly*/
+    justify-content: flex-start;
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.cross-axis-alignment {
+    display: flex;
+    flex-direction: row;
+    /*align-items: flex-start | center | flex-end | baseline; por defect es stretch*/
+    align-items: stretch;
+}
